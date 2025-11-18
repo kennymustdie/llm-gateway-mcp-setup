@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "llm_gateway": {
+      "command": "ssh",
+      "args": [
+        "thorsten@135.181.128.98",
+        "node",
+        "/opt/llm-gateway-mcp/dist/index.js"
+      ],
+      "env": {}
+    },
+    "mempro": {
+      "command": "/Users/studio/goose-mempro-extension/mcp-server-clean.sh",
+      "args": [],
+      "env": {
+        "MEMPRO_URL": "http://135.181.128.98:8821"
+      }
+    }
+  }
+}
